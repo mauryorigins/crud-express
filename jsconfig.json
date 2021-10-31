@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ESNext",
+    "paths": {
+      "#Config/*": ["./src/configuration/*"],
+      "#Routes/*": ["./src/routes/*"],
+      "#DataModel/*": ["./src/data-model/*"]
+    }
+  }
+}

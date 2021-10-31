@@ -1,0 +1,32 @@
+{
+  "name": "products-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build-start": "tsc; node ./dist/index.js",
+    "start": "node ./dist/index.js",
+    "dev": "ts-node-dev --respawn ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "imports": {
+    "#Config/*": "./src/configuration/*.ts",
+    "#Routes/*": "./src/routes/*.ts",
+    "#DataModel/*": "./src/data-model/*.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {}
+}
