@@ -25,6 +25,7 @@
         "no-unused-vars": 0,
         "comma-dangle": ["warn", "never"],
         "no-use-before-define": ["error", { "functions": false, "classes": true, "variables": true }],
+        "import/prefer-default-export": "off",
         // Typescript
         "import/extensions": [ "error", "ignorePackages", { "ts": "never" }],
         "@typescript-eslint/no-unused-vars": [1, { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
