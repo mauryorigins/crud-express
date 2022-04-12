@@ -7,9 +7,8 @@ import cors from 'cors';
 // ---Others
 import startLogs from '#Config/startLogs';
 // ---Routes
-import logearse from '#Routes/loginMock';
+import Crud from '#Routes/Crud';
 // -----------------------------------CONFIG-------------------------------
-
 const app = express();
 const enviroment = process.env.NODE_ENV || 'development';
 const port = process.env.PORT || 4000;
@@ -20,7 +19,7 @@ app.use(express.json()); // Needed to read req.body
 app.use(helmet()); // For security
 app.use(cors()); // For security
 // -----------------------------------ROUTES-------------------------------
-app.use('/api/loginMock/', logearse);
+app.use('/api/Crud/', Crud);
 // -----------------------------------SSL-------------------------------
 const http = require('http');
 
